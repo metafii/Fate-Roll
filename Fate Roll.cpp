@@ -1,4 +1,4 @@
-//Fate Roll
+//Fate Roll.cpp
 #include <iostream>
 
 int d4(int a)
@@ -132,9 +132,11 @@ int cointoss(int a)
         if (ct == 1)
         {
             if (heads > tails)
-            {
                 std::cout << "Win!!!" << std::endl;
-            }
+
+			else if (heads == tails)
+				std::cout << "Draw." << std::endl;
+
             else
                 std::cout << "Lose..." << std::endl;
         }
@@ -142,17 +144,17 @@ int cointoss(int a)
         else if (ct == 2)
         {
             if (heads < tails)
-            {
                 std::cout << "Win!!!" << std::endl;
-            }
+
+			else if (heads == tails)
+			    std::cout << "Draw." << std::endl;
+
             else
                 std::cout << "Lose..." << std::endl;
         }
     }
     else
-    {
         std::cout << "\nPlease enter the numbers in the options. The program is shutting down..." << std::endl;
-    }
     return 0;
 }
 
@@ -165,17 +167,15 @@ int main()
     std::cout << "Choose a dice you want to roll: ";
     std::cin >> procces_no;
     if (procces_no > 7 || procces_no < 1)
-    {
         std::cout << "\nPlease enter the numbers in the options. The program is shutting down..." << std::endl;
-    }
+
     else
     {
         std::cout << "\nHow many times the dice will be rolled: ";
         std::cin >> a;
         if (a < 1)
-        {
             std::cout << "\nNumbers less than one are not acceptable. The program is shutting down..." << std::endl;
-        }
+			
         else
         {
             if (procces_no == 1)
