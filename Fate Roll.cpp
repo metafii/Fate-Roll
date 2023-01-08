@@ -1,4 +1,4 @@
-//Fate Roll.cpp
+//*Fate Roll.cpp
 #include <iostream>
 
 int d4(int a)
