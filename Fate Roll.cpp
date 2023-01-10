@@ -14,7 +14,7 @@ int main()
     int a;
     int procces_no;
     std::cout << "WELCOME TO FATE ROLL!\n" << std::endl;
-    std::cout << " 1. _d4 Dice\n 2. _d6 Dice\n 3. _d8 Dice\n 4. _d10 Dice\n 5. _d12 Dice\n 6. _d20 Dice\n 7. Coin Toss\n" << std::endl;
+    std::cout << "1. _d4 Dice\n2. _d6 Dice\n3. _d8 Dice\n4. _d10 Dice\n5. _d12 Dice\n6. _d20 Dice\n7. Coin Toss\n" << std::endl;
     std::cout << "Choose a dice you want to roll: ";
     std::cin >> procces_no;
     if (procces_no > 7 || procces_no < 1)
@@ -166,12 +166,11 @@ void cointoss(int a)
     int rng;
     int ct;
     srand(time(NULL));
-    std::cout << " 1. Heads\n 2. Tails\n";
+    std::cout << "1. Heads\n2. Tails\n";
     std::cout << "Heads or Tails?" << std::endl;
     std::cin >> ct;
     if (ct == 1 || ct == 2)
     {
-
         std::cout << "\n" << a << " times Coin Toss" << std::endl;
         std::cout << std::endl;
         for (int i = 0; i < a; i++)
